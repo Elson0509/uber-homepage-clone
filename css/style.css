@@ -214,6 +214,55 @@ header img{
     color: #888;
 }
 
+.language-toggle{
+    padding-top: 80px;
+}
+
+.close-language-toggle{
+    text-align: right;
+    font-size: 2rem;
+}
+
+.close-language-toggle i{
+    margin-right: 10px;
+    padding: 20px;
+    height: 29px;
+    width: 29px;
+    border-radius: 50px;
+}
+
+.close-language-toggle i:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+.language-toggle h2{
+    font-size: 3rem;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.language-toggle button{
+    border: 0;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    background: white;
+    margin-right: 25px;
+}
+
+.language-toggle button:hover{
+    background: #eee !important;
+    transition: background .5s ease-in;
+}
+
+.active-language{
+    background: #eee !important;
+}
+
 @media only screen and (max-width: 1135px) {
     .links-hide-small{
         display: none;
