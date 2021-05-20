@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header div ul{
+    display: inline;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+header div ul li{
+    display: inline;
+    margin-left: 8px;
+    padding: 8px;
+    transition: all .3s;
+    border-radius: 20px;
+}
+
+header div ul li:hover{
+    background: #333;
+    transition: all .3s;
+}
+
+header div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.arrow-company{
+    font-size: 10px;
+}
+
+.icon-header-right{
+    font-size: 15px;
+}
+
+.sign-up-header{
+    background: white;
+    border-radius: 30px;
+    transition: background .3s;
+}
+
+.sign-up-header:hover{
+    background: #ddd;
+    transition: background .3s;
+}
+
+.sign-up-header a{
+    color: black;
+}
+
+header img{
+    max-height: 32px;
+}
+
+.left-header-div{
+    padding-left: 110px;
+    display: flex;
+}
+
+.right-header-div{
+    padding-right: 110px;
+    display: flex;
+}
+
+.links-show-small{
+    display: none;
+}
+
+.hamb{
+    width: 13px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.hamb:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+}
+
+.sign-up-small-header{
+    margin-right: 12px;
+}
+
+.a-hamb{
+    border-radius: 50%;
+    transition: background .3s;
+    width: 40px;
+    height: 40px;
+}
+
+.a-hamb:hover{
+    background: #333;
+    transition: background .3s;
+}
+
+.navi-toggle{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    background: white;
+}
+
+.navi-toggle a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.navi-toggle li{
+    margin: 30px;
+    list-style: none;
+}
+
+.products-navi-toggle{
+    background: #eee;
+    text-align: center;
+    padding: 10px;
+    margin: 80px 20px 0 20px;
+}
+
+.products-navi-toggle a{
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.language-navi-toggle{
+    margin: 20px 0 0 20px;
+}
+
+.language-navi-toggle a{
+    font-size: 1rem;
+}
+
+#hamburguer i{
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 15px;
+}
+
+.navi-toggle-products{
+    display: none;
+    position: fixed;
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+         box-shadow: 0 4px 6px -6px black;
+    background: white;
+    width: 100%;
+}
+
+.navi-toggle-products li{
+    border-bottom: 1px solid #eee;
+}
+
+.navi-toggle-products li:hover{
+    background: #efefef;
+}
+
+.navi-toggle-products a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.navi-toggle-products i{
+    font-size: 1.2rem;
+    margin: 16px;
+    width: 26px;
+}
+
+.subnav{
+    position: absolute;
+    background: eee;
+    z-index: -1;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+
+.subnav li{
+    display: block;
+    cursor: pointer;
+    border-radius: 0;
+    margin: 0;
+    padding-left: 12px;
+}
+
+.subnav li:hover{
+    background: #efefef;
+}
+
+.subnav a{
+    color: #888;
+}
+
+@media only screen and (max-width: 1135px) {
+    .links-hide-small{
+        display: none;
+    }
+
+    .links-show-small{
+        display: block;
+    }
+
+    .left-header-div{
+        padding-left: 20px;
+    }
+    
+    .right-header-div{
+        padding-right: 30px;
+    }
+}
+
