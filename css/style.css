@@ -195,6 +195,8 @@ header img{
     z-index: -1;
     width: 200px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-height: 300px;
+    overflow: auto;
     display: none;
 }
 
@@ -213,6 +215,43 @@ header img{
 .subnav a{
     color: #888;
 }
+
+.subnav-products{
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+         box-shadow: 0 4px 6px -6px black;
+    background: white;
+    
+}
+
+.subnav-products li{
+    border-bottom: 1px solid #eee;
+}
+
+.subnav-products li:hover{
+    background: #efefef;
+}
+
+.subnav-products a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.subnav-products i{
+    font-size: 1.2rem;
+    margin: 10px 20px 10px 10px;
+    width: 16px;
+}
+
+
+
+
+
+
+
+
+
 
 .language-toggle{
     padding-top: 80px;

@@ -36,7 +36,21 @@
         <div class="right-header-div">
             <ul class="links-hide-small">
                 <li onclick="openMenu('language-toggle')"><a href="#"><i class="fas fa-globe icon-header-right">&nbsp&nbsp&nbsp</i>EN</a></li>
-                <li><a href="#"><i class="fas fa-th icon-header-right">&nbsp&nbsp&nbsp</i>Products</a></li>
+                <li onclick="openMenu('navi-toggle-products-menu')"><a href="#"><i class="fas fa-th icon-header-right">&nbsp&nbsp&nbsp</i>Products</a></li>
+                <div class="subnav subnav-products" id="navi-toggle-products-menu">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#"><i class="fas fa-car"></i>Ride</a></li>
+                        <li><a href="#"><i class="fas fa-peace"></i>Drive</a></li>
+                        <li><a href="#"><i class="fas fa-utensils"></i>Eat</a></li>
+                        <li><a href="#"><i class="fas fa-glass-cheers"></i>Restaurants</a></li>
+                        <li><a href="#"><i class="fas fa-truck"></i>Freight</a></li>
+                        <li><a href="#"><i class="fas fa-motorcycle"></i>Bike & scoot</a></li>
+                        <li><a href="#"><i class="fas fa-train"></i>Transit</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i>Business</a></li>
+                        <li><a href="#"><i class="fas fa-money-bill-alt"></i>Money</a></li>
+                    </ul>
+                </div>
                 <li><a href="#"><i class="far fa-user icon-header-right">&nbsp&nbsp&nbsp</i>Log in</a></li>
                 <li class="sign-up-header"><a href="#">Sign up</a></li>
             </ul>
@@ -64,7 +78,7 @@
         </div>
     </nav>
     <!-- navi links -->
-    <nav class="navi-toggle-products" id="navi-toggle-products">
+    <div class="navi-toggle-products" id="navi-toggle-products">
         <ul>
             <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="#"><i class="fas fa-car"></i>Ride</a></li>
@@ -77,10 +91,10 @@
             <li><a href="#"><i class="fas fa-briefcase"></i>Business</a></li>
             <li><a href="#"><i class="fas fa-money-bill-alt"></i>Money</a></li>
         </ul>
-    </nav>
+    </div>
     <!-- language toggle -->
     <div class="language-toggle" id="language-toggle">
-        <div class="close-language-toggle">
+        <div class="close-language-toggle" onclick="closeAllMenus()">
             <i class="fas fa-times"></i>
         </div>
         <h2>Select your prefered Language</h2>

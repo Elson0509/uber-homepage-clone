@@ -1,11 +1,13 @@
 //references
-const hamb = document.getElementById("hamb")
 const hamburguer = document.getElementById("hamburguer")
-const close = document.getElementById("close")
 const companyMenuButton = document.getElementById("company-menu")
 
 const windows = [
-    'navi-toggle-products','company-subnav','language-toggle', 'navi-toggle'
+    'navi-toggle-products',
+    'company-subnav',
+    'language-toggle',
+    'navi-toggle',
+    'navi-toggle-products-menu'
 ]
 
 const isOpenWindows = []
@@ -38,22 +40,20 @@ const openMenu = id => {
             
         }
         //checking if changing the icon is needed
-        if(isOpenWindows['company-subnav']){
-            companyMenuButton.innerHTML = '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-up arrow-company"></i></a>'
-        }
-        else{
-            companyMenuButton.innerHTML = '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
-        }
-        if(isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products']){
-            hamburguer.innerHTML='<i class="fas fa-times"></i>'
-        }
-        else{
-            hamburguer.innerHTML='<div class="hamb"></div>'
-        }
+        companyMenuButton.innerHTML = isOpenWindows['company-subnav'] ?
+            '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-up arrow-company"></i></a>'
+            :
+            '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
+
+        hamburguer.innerHTML = isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'] ?
+            '<i class="fas fa-times"></i>'
+            :
+            '<div class="hamb"></div>'
     })
 }
 
 const closeAllMenus = _ => {
+    //close each menu window
     windows.forEach(win => {
         const el = document.getElementById(win)
         el.style.display='none'
