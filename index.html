@@ -14,7 +14,7 @@
         <div class="left-header-div">
             <img src="imgs/logo.webp">
             <ul class="links-hide-small">
-                <li onclick="companyMenuHandler()" id="company-menu"><a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a></li>
+                <li onclick="openMenu('company-subnav')" id="company-menu"><a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a></li>
                 <div class="subnav" id="company-subnav">
                     <ul>
                         <li><a href="#">About us</a></li>
@@ -35,7 +35,7 @@
         <!-- right header side -->
         <div class="right-header-div">
             <ul class="links-hide-small">
-                <li><a href="#"><i class="fas fa-globe icon-header-right">&nbsp&nbsp&nbsp</i>EN</a></li>
+                <li onclick="openMenu('language-toggle')"><a href="#"><i class="fas fa-globe icon-header-right">&nbsp&nbsp&nbsp</i>EN</a></li>
                 <li><a href="#"><i class="fas fa-th icon-header-right">&nbsp&nbsp&nbsp</i>Products</a></li>
                 <li><a href="#"><i class="far fa-user icon-header-right">&nbsp&nbsp&nbsp</i>Log in</a></li>
                 <li class="sign-up-header"><a href="#">Sign up</a></li>
@@ -44,7 +44,7 @@
                 <li><a href="#"><i class="far fa-user icon-header-right"></i></a></li>
                 <li class="sign-up-header sign-up-small-header"><a href="#">Sign up</a></li>
             </ul>
-            <a class="links-show-small a-hamb" href="#" onclick="toggleMenu()" id="hamburguer"><div class="hamb"></div></a>
+            <a class="links-show-small a-hamb" href="#" onclick="openMenu('navi-toggle')" id="hamburguer"><div class="hamb"></div></a>
         </div>
     </header>
 
@@ -57,7 +57,7 @@
             <li><a href="#">COVID-19 resources</a></li>
         </ul>
         <div class="products-navi-toggle">
-            <a href="#" onclick="productHandler()"><i class="fas fa-th icon-header-right">&nbsp&nbsp&nbsp</i>Products</a>
+            <a href="#" onclick="openMenu('navi-toggle-products')"><i class="fas fa-th icon-header-right">&nbsp&nbsp&nbsp</i>Products</a>
         </div>
         <div class="language-navi-toggle">
             <a href="#"><i class="fas fa-globe icon-header-right">&nbsp&nbsp&nbsp</i>EN</a>

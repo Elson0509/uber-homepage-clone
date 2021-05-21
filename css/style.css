@@ -216,6 +216,11 @@ header img{
 
 .language-toggle{
     padding-top: 80px;
+    height: 100%;
+    position: fixed;
+    display: none;
+    background: white;
+    width: 100%;
 }
 
 .close-language-toggle{
