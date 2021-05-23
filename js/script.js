@@ -1,6 +1,7 @@
 //references
 const hamburguer = document.getElementById("hamburguer")
 const companyMenuButton = document.getElementById("company-menu")
+const covidMonitor = document.getElementById("covid-monitor")
 
 const windows = [
     'navi-toggle-products',
@@ -61,4 +62,8 @@ const closeAllMenus = _ => {
         companyMenuButton.innerHTML = '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
         hamburguer.innerHTML='<div class="hamb"></div>'
     })
+}
+
+const closeCovidMonitor = _ => {
+    covidMonitor.style.display='none'
 }

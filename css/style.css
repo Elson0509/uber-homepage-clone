@@ -221,7 +221,6 @@ header img{
     -moz-box-shadow: 0 4px 6px -6px black;
          box-shadow: 0 4px 6px -6px black;
     background: white;
-    
 }
 
 .subnav-products li{
@@ -243,15 +242,6 @@ header img{
     margin: 10px 20px 10px 10px;
     width: 16px;
 }
-
-
-
-
-
-
-
-
-
 
 .language-toggle{
     padding-top: 80px;
@@ -305,6 +295,34 @@ header img{
 
 .active-language{
     background: #eee !important;
+}
+
+.covid-monitor{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    background: #EFF3FE;
+}
+
+.covid-monitor i{
+    cursor: pointer;
+}
+
+.covid-monitor h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.covid-monitor h4{
+    font-weight: 500;
+}
+
+.covid-monitor a{
+    color: black;
+}
+
+.covid-monitor h2, h4{
+    margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1135px) {
