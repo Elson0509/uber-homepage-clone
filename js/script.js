@@ -2,6 +2,7 @@
 const hamburguer = document.getElementById("hamburguer")
 const companyMenuButton = document.getElementById("company-menu")
 const covidMonitor = document.getElementById("covid-monitor")
+const signupHr = document.getElementById("signup-hr")
 
 const windows = [
     'navi-toggle-products',
@@ -66,4 +67,8 @@ const closeAllMenus = _ => {
 
 const closeCovidMonitor = _ => {
     covidMonitor.style.display='none'
+}
+
+const signupOptionHandler = opt => {
+    signupHr.style.marginLeft = `${10+opt*34}%`
 }
