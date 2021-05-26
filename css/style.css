@@ -119,6 +119,7 @@ header img{
     position: fixed;
     display: none;
     background: white;
+    z-index: 2
 }
 
 .navi-toggle a{
@@ -162,11 +163,16 @@ header img{
 .navi-toggle-products{
     display: none;
     position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+}
+
+.navi-toggle-products ul{
     -webkit-box-shadow: 0 4px 6px -6px black;
     -moz-box-shadow: 0 4px 6px -6px black;
          box-shadow: 0 4px 6px -6px black;
-    background: white;
-    width: 100%;
 }
 
 .navi-toggle-products li{
@@ -191,17 +197,22 @@ header img{
 
 .subnav{
     position: absolute;
-    background: eee;
-    z-index: -1;
+    background: #eee;
     width: 200px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     max-height: 300px;
     overflow: auto;
+    top: 62px;
     display: none;
+}
+
+.subnav ul{
+    margin: 0;
 }
 
 .subnav li{
     display: block;
+    background: #eee;
     cursor: pointer;
     border-radius: 0;
     margin: 0;
@@ -209,7 +220,11 @@ header img{
 }
 
 .subnav li:hover{
-    background: #efefef;
+    background: #ddd;
+}
+
+.subnav li:hover a{
+    color: black;
 }
 
 .subnav a{
@@ -221,6 +236,7 @@ header img{
     -moz-box-shadow: 0 4px 6px -6px black;
          box-shadow: 0 4px 6px -6px black;
     background: white;
+
 }
 
 .subnav-products li{
@@ -250,6 +266,7 @@ header img{
     display: none;
     background: white;
     width: 100%;
+    z-index: 2;
 }
 
 .close-language-toggle{
@@ -451,6 +468,10 @@ header img{
     margin-left: 10%;
 }
 
+.stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
 
 @media only screen and (max-width: 1135px) {
     .links-hide-small{

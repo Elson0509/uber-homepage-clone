@@ -22,6 +22,7 @@ const openMenu = id => {
     //if it is menu toggle and it is a X, close all.
     if(id==='navi-toggle' && (isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'])){
         closeAllMenus()
+        checkScrolling()
         return
     }
     //iterating windows by windows to check which one was invoked
@@ -39,19 +40,23 @@ const openMenu = id => {
             el.style.display='none'
             //set true to its window flag
             isOpenWindows[win] = false
-            
         }
-        //checking if changing the icon is needed
-        companyMenuButton.innerHTML = isOpenWindows['company-subnav'] ?
-            '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-up arrow-company"></i></a>'
-            :
-            '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
-
-        hamburguer.innerHTML = isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'] ?
-            '<i class="fas fa-times"></i>'
-            :
-            '<div class="hamb"></div>'
     })
+    checkIcons()
+    checkScrolling()
+}
+
+const checkIcons = _ => {
+    //checking if changing the icon is needed
+    companyMenuButton.innerHTML = isOpenWindows['company-subnav'] ?
+    '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-up arrow-company"></i></a>'
+    :
+    '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
+
+    hamburguer.innerHTML = isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'] ?
+    '<i class="fas fa-times"></i>'
+    :
+    '<div class="hamb"></div>'
 }
 
 const closeAllMenus = _ => {
@@ -71,4 +76,23 @@ const closeCovidMonitor = _ => {
 
 const signupOptionHandler = opt => {
     signupHr.style.marginLeft = `${10+opt*34}%`
+}
+
+const disableScrolling = _ =>{
+    const body = document.getElementsByTagName("body")[0]
+    body.classList.add("stop-scrolling")
+}
+
+const enableScrolling = _ =>{
+    const body = document.getElementsByTagName("body")[0]
+    body.classList.remove("stop-scrolling")
+}
+
+const checkScrolling = _ =>{
+    if(isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products']){
+        disableScrolling()
+    }
+    else{
+        enableScrolling()
+    }
 }
