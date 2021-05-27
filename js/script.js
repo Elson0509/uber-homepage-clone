@@ -76,6 +76,46 @@ const closeCovidMonitor = _ => {
 
 const signupOptionHandler = opt => {
     signupHr.style.marginLeft = `${10+opt*34}%`
+    const signInfo = document.getElementById('sign-info')
+    const signUp = document.getElementById('signup')
+    switch(opt){
+        case 0:
+            signInfo.innerHTML = `
+            <h2>Get in the driver's seat and get paid</h2>
+            <p>Drive on the platform with the largest network of active riders</p>
+            <button>Sign up to drive</button>
+            <a href="#">Learn more about driving and delivering</a>`
+            signUp.style.backgroundImage = "url('../imgs/earner_home.jpg')"
+            break
+        case 1:
+            signInfo.innerHTML = `
+            <h2>Discover delicious eats</h2>
+            <p>Order delivery from restaurants you love.</p>
+            <button>Order now</button>
+            <a href="#">Own a restaurant? Partner with Uber Eats</a>`
+            signUp.style.backgroundImage = "url('../imgs/eats_home.jpg')"
+            break
+        case 2:
+            signInfo.innerHTML = `
+            <h2>Request a ride now</h2>
+            <div class="ride-input">
+                <span class="vertical-line"></span>
+                <span class="far fa-circle input-icon-left"></span>
+                <span class="fas fa-location-arrow"></span>
+                <input type="text" placeholder="Enter pickup location">
+                
+            </div>
+            <div class="ride-input">
+                <span class="far fa-square input-icon-left"></span>
+                <input type="text" placeholder="Enter destination">
+            </div>
+            
+            <button>Request now</button>
+            <button class="sign-button-light">Schedule for later</button>`
+            signUp.style.backgroundImage = "url('../imgs/rider_home.jpg')"
+            break
+        
+    }
 }
 
 const disableScrolling = _ =>{
