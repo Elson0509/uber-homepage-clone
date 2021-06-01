@@ -551,6 +551,31 @@ header img{
     transition: all .2s ease-in !important;
 }
 
+.business{
+    background-image: url('../imgs/tower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: max(5%, 30px);
+    padding-top: 70px;
+}
+
+.business h2{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.business p{
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.business button{
+    margin-bottom: 70px;
+}
+
 
 @media only screen and (max-width: 1135px) {
     .links-hide-small{
