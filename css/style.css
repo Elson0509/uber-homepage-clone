@@ -317,7 +317,7 @@ header img{
 .covid-monitor{
     display: flex;
     justify-content: space-between;
-    padding: 35px;
+    padding: 35px 10%;
     background: #EFF3FE;
 }
 
@@ -352,21 +352,14 @@ header img{
     background-image: url('../imgs/earner_home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 690px;
+    padding: 60px 10%;
     -webkit-transition: background-image 0.4s ease-in-out;
     transition: background-image 0.4s ease-in-out;
 }
 
 .signup-box{
-    position: absolute;
     width: 45%;
-    margin: 70px 0 0 70px;
     background: white;
-}
-
-.signup-choices-wrapper{
-    border-bottom: 1px solid #ccc;
 }
 
 .signup-choices{
@@ -396,11 +389,12 @@ header img{
 }
 
 .sign-info{
+    border-top: 1px solid #ccc;
     padding: 50px;
 }
 
 .sign-info h2{
-    font-size: 3.7rem;
+    font-size: 3.2rem;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 10px;
@@ -411,25 +405,9 @@ header img{
     margin: 20px 0 20px 0;
 }
 
-.sign-info button{
-    margin: 20px 20px 20px 0;
-    display: block;
-    border: none;
-    background: black;
-    color: white;
-    padding: 16px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all .2s ease-in;
-}
-
-.sign-info button:hover{
-    background: #232323;
-    transition: all .2s ease-in;
-}
-
 .sign-info a{
     color: black;
+    display: block;
     text-decoration: none;
     position: relative;
 }
@@ -504,18 +482,6 @@ header img{
     overflow: hidden;
 }
 
-.sign-button-light{
-    background: #f7f7f7 !important;
-    color: black !important;
-    transition: all .2s ease-in !important;
-}
-
-.sign-button-light:hover{
-    background: #e2e2e2 !important;
-    transition: all .2s ease-in !important;
-    transition: all .2s ease-in !important;
-}
-
 .ride-input{
     position: relative;
 }
@@ -550,6 +516,41 @@ header img{
     color: black;
 }
 
+.btn-dark{
+    margin: 20px 20px 20px 0;
+    display: inline;
+    border: none;
+    background: black;
+    color: white;
+    padding: 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.btn-dark:hover{
+    background: #232323;
+    transition: all .2s ease-in;
+}
+
+.btn-light{
+    margin: 20px 20px 20px 0;
+    display: inline;
+    border: none;
+    padding: 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #f7f7f7 !important;
+    color: black !important;
+    transition: all .2s ease-in !important;
+}
+
+.btn-light:hover{
+    background: #e2e2e2 !important;
+    transition: all .2s ease-in !important;
+    transition: all .2s ease-in !important;
+}
+
 
 @media only screen and (max-width: 1135px) {
     .links-hide-small{
@@ -566,6 +567,46 @@ header img{
     
     .right-header-div{
         padding-right: 30px;
+    }
+
+    .language-toggle button{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .signup{
+        padding: 0;
+    }
+
+    .signup-box{
+        position: block;
+        width: 100%;
+        background: white;
+        margin: 0;
+    }
+
+    .signup-choices-wrapper{
+        width: 40%;
+    }
+
+    .signup-choices{
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    .sign-info h2{
+        font-size: 2.6rem;
+    }
+
+    .signup{
+        
+    }
+
+    .img-signup{
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 

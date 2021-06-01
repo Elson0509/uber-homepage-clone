@@ -53,7 +53,7 @@ const checkIcons = _ => {
     :
     '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
 
-    hamburguer.innerHTML = isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'] ?
+    hamburguer.innerHTML = isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'] || isOpenWindows['language-toggle'] ?
     '<i class="fas fa-times"></i>'
     :
     '<div class="hamb"></div>'
@@ -68,6 +68,8 @@ const closeAllMenus = _ => {
         companyMenuButton.innerHTML = '<a href="#">Company &nbsp&nbsp<i class="fas fa-chevron-down arrow-company"></i></a>'
         hamburguer.innerHTML='<div class="hamb"></div>'
     })
+
+    checkScrolling()
 }
 
 const closeCovidMonitor = _ => {
@@ -77,23 +79,26 @@ const closeCovidMonitor = _ => {
 const signupOptionHandler = opt => {
     signupHr.style.marginLeft = `${10+opt*34}%`
     const signInfo = document.getElementById('sign-info')
+    const imgSignup = document.getElementById('img-signup')
     const signUp = document.getElementById('signup')
     switch(opt){
         case 0:
             signInfo.innerHTML = `
             <h2>Get in the driver's seat and get paid</h2>
             <p>Drive on the platform with the largest network of active riders</p>
-            <button>Sign up to drive</button>
+            <button class="btn-dark">Sign up to drive</button>
             <a href="#">Learn more about driving and delivering</a>`
             signUp.style.backgroundImage = "url('../imgs/earner_home.jpg')"
+            imgSignup.src = '../imgs/earner_home.jpg'
             break
         case 1:
             signInfo.innerHTML = `
             <h2>Discover delicious eats</h2>
             <p>Order delivery from restaurants you love.</p>
-            <button>Order now</button>
+            <button class="btn-dark">Order now</button>
             <a href="#">Own a restaurant? Partner with Uber Eats</a>`
-            signUp.style.backgroundImage = "url('../imgs/eats_home.jpg')"
+            signUp.style.backgroundImage = "url('../imgs/eats_home_bg.jpg')"
+            imgSignup.src = '../imgs/eats_home.jpg'
             break
         case 2:
             signInfo.innerHTML = `
@@ -110,9 +115,10 @@ const signupOptionHandler = opt => {
                 <input type="text" placeholder="Enter destination">
             </div>
             
-            <button>Request now</button>
-            <button class="sign-button-light">Schedule for later</button>`
+            <button class="btn-dark">Request now</button>
+            <button class="btn-dark btn-light">Schedule for later</button>`
             signUp.style.backgroundImage = "url('../imgs/rider_home.jpg')"
+            imgSignup.src = '../imgs/rider_home.jpg'
             break
         
     }
@@ -129,7 +135,7 @@ const enableScrolling = _ =>{
 }
 
 const checkScrolling = _ =>{
-    if(isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products']){
+    if(isOpenWindows['navi-toggle'] || isOpenWindows['navi-toggle-products'] || isOpenWindows['language-toggle']){
         disableScrolling()
     }
     else{
