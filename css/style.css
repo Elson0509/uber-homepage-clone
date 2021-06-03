@@ -616,6 +616,29 @@ header img{
     height: auto;
 }
 
+.safety-cards-icons{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 33px;
+}
+
+@media only screen and (max-width: 1135px) {
+    .safety-cards-icons{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .safety-cards-icons{
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+}
+
+.safety-cards-icons i{
+    font-size: 1.3rem;
+}
 
 @media only screen and (max-width: 1135px) {
     .links-hide-small{
