@@ -87,7 +87,7 @@ const signupOptionHandler = opt => {
             <h2>Get in the driver's seat and get paid</h2>
             <p>Drive on the platform with the largest network of active riders</p>
             <button class="btn-dark">Sign up to drive</button>
-            <a href="#">Learn more about driving and delivering</a>`
+            <a class="link-underline-inline" href="#">Learn more about driving and delivering</a>`
             signUp.style.backgroundImage = "url('../imgs/earner_home.jpg')"
             imgSignup.src = '../imgs/earner_home.jpg'
             break
@@ -96,7 +96,7 @@ const signupOptionHandler = opt => {
             <h2>Discover delicious eats</h2>
             <p>Order delivery from restaurants you love.</p>
             <button class="btn-dark">Order now</button>
-            <a href="#">Own a restaurant? Partner with Uber Eats</a>`
+            <a class="link-underline-inline" href="#">Own a restaurant? Partner with Uber Eats</a>`
             signUp.style.backgroundImage = "url('../imgs/eats_home_bg.jpg')"
             imgSignup.src = '../imgs/eats_home.jpg'
             break

@@ -405,38 +405,37 @@ header img{
     margin: 20px 0 20px 0;
 }
 
-.sign-info a{
+.link-underline-inline{
     color: black;
-    display: block;
+    margin-right: 20px !important;
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
 }
 
-.sign-info a::before{
+.link-underline-inline::before{
     content:'';
     position: absolute;
     width: 100%;
     height: 1px;
-    display: block;
-    margin-top: 24px;
+    top:22px;
     right: 0;
     background: #ccc;
 }
 
-.sign-info a::after{
+.link-underline-inline::after{
     content:'';
     position: absolute;
     width: 0%;
     height: 1px;
-    display: block;
-    margin-top: 5px;
+    top:22px;
     right: 0;
     background: black;
     transition: width .4s ease;
     -webkit-transition: width .4s ease;
 }
 
-.sign-info a:hover::after{
+.link-underline-inline:hover::after{
     width: 100%;
     left: 0;
     background: black;
@@ -559,13 +558,6 @@ header img{
     padding-top: 70px;
 }
 
-.business h2{
-    font-size: 2rem;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .business p{
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -574,6 +566,54 @@ header img{
 
 .business button{
     margin-bottom: 70px;
+}
+
+.title{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.description{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.safety{
+    margin: 5%;
+}
+
+.safety-cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .safety-cards{
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+}
+
+.safety-cards div{
+    margin-bottom: 40px;
+}
+
+.safety-cards img{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -622,10 +662,6 @@ header img{
 
     .sign-info h2{
         font-size: 2.6rem;
-    }
-
-    .signup{
-        
     }
 
     .img-signup{
