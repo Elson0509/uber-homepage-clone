@@ -640,6 +640,67 @@ header img{
     font-size: 1.3rem;
 }
 
+.download{
+    padding: 5%;
+    background: #f4f4f4;
+}
+
+.download-cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 1135px) {
+    .download-cards{
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+}
+
+.download-card{
+    display: grid;
+    padding: 30px;
+    margin-bottom: 50px;
+    background: white;
+    border: 1px solid #ccc;
+    grid-template-columns: 160px auto 10px;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.download-card:hover i{
+    transform: translate(10px, 0);
+    transition: transform 0.3s linear;
+}
+
+.download-card img{
+    width: 160px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1135px) {
+    .download-card{
+        grid-template-columns: 100px auto 20px;
+        padding: 15px;
+    }
+
+    .download-card img{
+        width: 100px;
+    }
+}
+
+.download-card i{
+    font-size: 1.3rem;
+    transition: transform 0.3s linear;
+}
+
+.download-card p{
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 @media only screen and (max-width: 1135px) {
     .links-hide-small{
         display: none;
