@@ -737,6 +737,63 @@ header img{
 footer{
     background: black;
     color: white;
+    padding: 100px 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer div{
+    margin-bottom: 40px;
+}
+
+footer .logo{
+    height: 40px;
+    width: auto;
+}
+
+.footer-visit-link{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.footer-visit-link:hover{
+    border-bottom: 1px solid white;
+}
+
+.footer-themes{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-themes{
+        grid-template-columns: 40% 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-themes{
+        grid-template-columns: 100%;
+    }
+}
+
+.footer-themes h2{
+    font-size: 1.3rem;
+}
+
+.footer-themes li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.footer-themes a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-themes a:hover{
+    color: #777;
 }
 
 @keyframes translatearrow{
