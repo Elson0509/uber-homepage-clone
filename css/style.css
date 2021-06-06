@@ -701,6 +701,64 @@ header img{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.arrow-signup{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .arrow-signup{
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+}
+
+.arrow-signup-div{
+    display: grid;
+    grid-template-columns: auto 30px;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow-signup-div:hover{
+    color: #666;
+}
+
+.arrow-signup-div:hover .arrow-signup-icons-div{
+    animation-name: translatearrow;
+    animation-duration: .8s;
+}
+
+footer{
+    background: black;
+    color: white;
+}
+
+@keyframes translatearrow{
+    from {
+        transform: translate(-60px, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.arrow-signup-icons-div{
+    position: absolute;
+    right: -90px;
+    top: 30%;
+}
+
+.arrow-signup-div i{
+    font-size: 1.8rem;
+    padding-right: 30px;
+}
+
 @media only screen and (max-width: 1135px) {
     .links-hide-small{
         display: none;
