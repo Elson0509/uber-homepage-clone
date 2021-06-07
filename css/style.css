@@ -241,6 +241,7 @@ header img{
 
 .subnav-products li{
     border-bottom: 1px solid #eee;
+    background: white;
 }
 
 .subnav-products li:hover{
@@ -636,7 +637,8 @@ header img{
 @media only screen and (max-width: 600px) {
     .safety-cards-icons{
         grid-template-columns: 100%;
-        gap: 0px;
+        margin-top: 40px;
+        gap: 50px;
     }
 }
 
