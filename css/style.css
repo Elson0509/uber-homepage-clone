@@ -310,6 +310,10 @@ header img{
     transition: background .5s ease-in;
 }
 
+.language-buttons{
+    padding-left: 30px;
+}
+
 .active-language{
     background: #eee !important;
 }
@@ -737,7 +741,7 @@ header img{
 footer{
     background: black;
     color: white;
-    padding: 100px 60px;
+    padding: 100px 60px 35px 60px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -814,6 +818,109 @@ footer .logo{
 .arrow-signup-div i{
     font-size: 1.8rem;
     padding-right: 30px;
+}
+
+.footer-social{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 50%;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-social{
+        grid-template-columns: 100%;
+    }
+}
+
+.footer-social a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icon-text{
+    display: inline;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-icon-text{
+        display: block;
+    }
+}
+
+.footer-icon-text p{
+    display: inline;
+}
+
+.footer-social img{
+    height: 40px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-social img{
+        height: 60px;
+    }
+}
+
+.footer-social-icons a{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-social-icons a{
+        margin-right: 15px;
+    }
+}
+
+.footer-social-icons a:hover{
+    background: #333;
+}
+
+.stores{
+    text-align: right;
+}
+
+@media only screen and (max-width: 1135px) {
+    .stores{
+        text-align: left;
+    }
+}
+
+.footer-privacy{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-privacy{
+        display: block;
+    }
+}
+
+.footer-privacy p{
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.footer-privacy li{
+    display: inline;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1135px) {
+    .footer-privacy li{
+        margin-right: 60px;
+    }
+}
+
+.footer-privacy a{
+    color: #999;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.footer-privacy a:hover{
+    color: #555;
 }
 
 @media only screen and (max-width: 1135px) {
